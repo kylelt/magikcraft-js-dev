@@ -13,6 +13,7 @@ RUN echo "# Installing Nodejs" && \
     apt-get install nodejs build-essential -y && \
     npm set strict-ssl false && \
     npm install -g npm@latest && \
+    npm install -g coffee-script && \
     npm install -g bower grunt grunt-cli && \
     npm -g install gulp-cli gulp && \
     npm cache clear -f && \
