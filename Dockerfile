@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y wget git curl python-pip zip monit open
 # ------------
 
 RUN echo "# Installing Nodejs" && \
-    curl -sL https://deb.nodesource.com/setup | bash - && \
+    curl -sL https://deb.nodesource.com/setup_6.3  | bash - && \
     apt-get install nodejs build-essential -y && \
     npm set strict-ssl false && \
     npm install -g npm@latest && \
