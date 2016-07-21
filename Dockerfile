@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 MAINTAINER Josh Wulf "josh@magikcraft.io"
 
 RUN echo deb http://archive.ubuntu.com/ubuntu precise universe > /etc/apt/sources.list.d/universe.list
-RUN apt-get update && apt-get install -y wget git curl pip zip monit openssh-server git ca-certificates daemon net-tools lsof nano lftp
+RUN apt-get update && apt-get install -y wget git curl python-pip zip monit openssh-server git ca-certificates daemon net-tools lsof nano lftp
 
 # Node related
 # ------------
